@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strict</title>
+
+	<script>
+		function ask(question, yes, no){
+			if (confirm(question))
+				yes()
+			else
+				no();
+		}
+		function showOk(){
+			alert("You Agreed.");
+		}
+		function showCancel(){
+			alert("You Canceled the Execution.");
+		}
+		//usage:functions showOk, showCancel are passed as arguments to ask
+		ask("Do you agree?",showOk,showCancel);
+	</script>
+</head>
+<body>
+</body>
+</html>

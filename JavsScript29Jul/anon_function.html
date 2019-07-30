@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strict</title>
+
+	<script>
+		function ask(question, yes, no){
+			if (confirm(question))
+				yes()
+			else
+				no();
+		}
+		ask(
+			"Do You Agree?",
+		() => alert("You Agreed."),//Here we are not using keyword function Anonymous Function.
+		() => alert("You Canceled the Execution.")//here we are not using keyword fun
+		);
+	</script>
+</head>
+<body>
+</body>
+</html>

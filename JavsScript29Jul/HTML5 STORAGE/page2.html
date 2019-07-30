@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local-Session Storage Demo Page 2</title>
+	<script>
+		document.write("<h3>"+localStorage.length+"<h3>");
+		document.write("<h3> Hi"+localStorage.username+"<h3>"+"from"+localStorage.country+"</h3>");
+		document.write("<h3> Hi"+sessionStorage.username+"</h3>");
+		//localStorage.clear()
+		//document.write("<h3>"+localStorage.length+"<h3>")
+		document.write("<h4>get value using getItem()"+localStorage.getItem("username")+"</h4>");
+		document.write("<h4>get value using getItem(+localStorage.key(0))"+localStorage.getItem(localStorage)+"</h4>");
+
+		//To Remove any Item from LocalStorage
+		localStorage.removeItem("color");
+		document.write("<h4> After Remove color from localStorage"+localStorage.length+"</h4>");
+
+		document.write("<h4> color"+localStorage.getItem('color')+"</h4");
+	</script>
+</head>
+<body>
+</body>
+</html>

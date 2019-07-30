@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Auto-Fill and Auto-Fit</title>
+	<style>
+		.grid{
+			display: grid;
+			border: 1px,solid black;
+			margin: 10px;
+		}
+		.grid > div{
+			font-size: 5vw;
+			padding: .5em;
+			background: gold;
+			text-align: center;
+		}
+		.auto-fill{
+			grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+		}
+		.auto-fit{
+			grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+		}
+	</style>
+</head>
+<body>
+	<div class="grid auto-fill">
+	<div>1</div>
+	<div>2</div>
+	</div>
+	<div class="grid auto-fit">
+	<div>1</div>
+	<div>2</div>
+	</div>
+	<h2>The auto-fit Keyword</h2>
+		<p>The auto-fit keyword almost works the same as auto-fill.The Difference is that the auto-fit collapses any empty tracks at the end of the placement,whereas auto-fill doesn't/.</p>
+		<p></p>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NestedFunction</title>
+
+	<script>
+		function ShowMessage(firstName)
+		{
+			function SayHello()
+			{
+				alert("Hello"+firstName);
+			}
+			return SayHello();
+		}
+		ShowMessage("Steve");
+	</script>
+</head>
+<body>
+</body>
+</html>

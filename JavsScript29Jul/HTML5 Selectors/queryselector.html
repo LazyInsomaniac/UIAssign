@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QuerySelector</title>
+	<div>
+		<h3>H3 Element</h3>
+		<p>I am a p element,my parent is div element.</p>
+	</div>
+	<div>
+		<h3>H3 Element</h3>
+		<p>I am a p element,my parent is also div element.</p>
+	</div>
+	<p> Click button to change the bg color of the first p element in the</p>
+		<button onclick="myFunction1()">Try it</button>
+		<script>
+			function myFunction1(){
+				var x= document.querySelector("div p");
+				x.style.backgroundColor=("orange");
+			}
+		</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selectors in HTML5</title>
+	
+</head>
+<body>
+	<p>This is a p Element</p>
+	<p id="demo">This is a p element with id="demo"</p>
+	<p class="example">This is also a p element.</p>
+	<p class="example">Click the button to add bg color to the first p element in the document.</p>
+	<button onclick="myFunction()">Try it</button>
+<script>
+		function myFunction(){
+			document.querySelector("p").style.backgroundColor= "skyblue";
+			document.querySelector("p.example").style.backgroundColor= "limegreen";
+			document.querySelector("#demo").innerHTML= "Blah Blah";
+		}
+
+	</script>
+</body>
+</html>

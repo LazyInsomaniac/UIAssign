@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blah Blah</title>
+            
+    </head>
+    <body>
+   <form onsubmit="checkLogin()">
+       <label for="txtusername">UserName</label><br>
+       <input type="text" name="txtusername" id="txtusername"><br>
+       <label for="txtpwd">Password</label><br>
+       <input type="password" name="txtpwd" id="txtpwd"><br>
+       <input type="submit" value="submit" ><br>
+       <input type="reset" value="Cancel" >
+   </form>
+   <script type="text/javascript">
+        function checkLogin(){
+            var username=document.getElementById("txtusername").value;
+            var password=document.getElementById("txtpwd").value;
+            // alert('username');
+            if(username=="system" && password=="admin")
+            {
+                alert('Login Successfull')
+            }
+            else{
+                alert('invalid credential')
+            }
+        }
+        </script>
+   </body>
+</html>

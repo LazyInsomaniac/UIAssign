@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head><title>Forms Review</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+form {border: 3px solid #f1f1f1;}
+
+</style>
+</head>
+<body>
+
+	<center><img src="C:\Users\admin\Desktop\bk.png" width="300" height="300" ></center>
+	<hr>
+
+<h1>Create a Burger</h1>
+
+  <div class="container">
+    <label for="protein">What type of protein yourlike?</label>
+    <input type="number" name="protein" required>
+    <br>
+    <hr>
+
+
+    <label for="patties">How many patties do you like</label>
+    <input type="number" name="patties" min="1" max="3" required>
+    <br>
+    <hr>
+
+   Rare<input type="range" min="1" max="100" value="50" class="slider" id="Range">Well-Done
+   	<br>
+   	<hr>
+
+   	<p>Which Toppings do you like?</p>
+  		<input type="radio" name="Toppings" value="Lettuce"> Lettuce
+  		<input type="radio" name="Toppings" value="Tomato"> Tomato
+  		<input type="radio" name="Toppings" value="Onion"> Onion
+  	<br>
+  	<hr>
+  	<p>Would you like to add cheese?</p>
+  		<input type="radio" name="cheese" value="syes">Yes
+  		<input type="radio" name="cheese" value="no">No
+  	<br>
+  	<hr>
+  	What Type of Bun do you like?
+  	<select name="buns" form="buntype">
+  	<option value="sesame">Sesame</option>
+  	<option value="non-sesame">Non-Sesame</option>
+  	<option value="half-sesame">Half-Sesame</option>
+  	<option value="again sesame">Again Sesame</option>
+        </select>
+        <br>	
+        <hr>
+        What Type of Sauce Do you Like?
+        <input type="text" name="Sauce">
+        <br>
+        <hr>
+        Anything Else You Wanna Add?
+        <br>
+        <input type="text" name="aelse">
+        <hr>
+
+   
+  </div>
+</form>
+
+</body>
+</html>

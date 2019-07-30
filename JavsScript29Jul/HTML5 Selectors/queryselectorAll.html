@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QuerySelectorALL</title>
+
+	
+</head>
+<body>
+	<div class="example">
+		A div class with example
+	</div>
+	<div class="example">
+		Another div class with example
+	</div>
+
+	<p class="example">This is a p element with class="example".</p>
+	<p>This is a <span class="example">Span</span> element with ckass="example" inside</p>
+  
+	<p>Click the button to change the background color of all elements with class="example"</p>
+
+	<button class="example" onclick="myFunction()">Try it</button>
+
+	<p><strong>Note:</strong>The QuerySelectorAll() method is not supported in IE browser</p>
+
+	<script>
+		function myFunction(){
+				var x= document.querySelectorAll(".example");
+				var i;
+				for(i=0;i<x.length;i++){
+					if (i%2==0) 
+					x[i].style.backgroundColor="orange";
+				else
+					x[i].style.backgroundColor="silver";
+				}
+			}
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlexBox</title>
+	<style>
+		.container{
+			display: flex;
+		}
+		.red{
+			background: orangered;
+			width: 40vw;
+			flex-grow: 1;
+		}
+		.green{
+			background: yellowgreen;
+			width: 30vw;
+		}
+		.blue{
+			background: steelblue;
+			width: 30vw;
+		}
+		.container > div{
+			font-size: 5vw;/*5% of viewport width*/
+			padding: .5em;
+			color: white;
+		}
+		.div1{
+			background: yellowgreen;
+			width: 40vw;
+		}
+		.div2{
+			background: steelblue;
+			width: 40vw;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="red">1
+			<div class="div1">1a</div>
+			<div class="div2">1b</div>
+			</div>
+		<div class="green">2</div>
+		<div class="blue">3</div>
+	</div>
+</body>
+</html>

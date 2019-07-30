@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid</title>
+	<style>
+		#grid{
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr; /*Takes up the available free space*/
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 2vw;
+		}
+		#grid div{
+			font-size: 5vw;
+			padding: 1em;
+			background: gold;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="grid">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	</div>
+</body>
+</html>

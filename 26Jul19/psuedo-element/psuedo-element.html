@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example of ::before and ::after Psuedo-Element</title>
+		<style type="text/css">
+			h1::before{
+				background-image: url("./larrow.png");
+				background-size: 50px 20px;
+				display: inline-block;
+				width: 50px;
+				height: 20px;
+				content:"";
+			}
+			h1::after{
+				background-image: url("./rarrow.png");
+				background-size: 50px 20px;
+				display: inline-block;
+				width: 50px;
+				height: 20px;
+				content:"";
+			}
+		</style>
+</head>
+<body>
+	<h1 align="center">This is a heading</h1>
+	<p><strong>NOte:</strong>IE 7 and earlier version don't support</p>
+</body>
+</html>

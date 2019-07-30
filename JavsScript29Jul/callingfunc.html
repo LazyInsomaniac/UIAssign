@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strict</title>
+
+	<script>
+		function sayHi(){		//create(1)
+			alert("hello")
+		}	
+		
+		let func =sayHi;		//copy(2)
+		func();					//run the copy(3)
+		sayHi();				//this also works too
+	</script>
+</head>
+<body>
+</body>
+</html>

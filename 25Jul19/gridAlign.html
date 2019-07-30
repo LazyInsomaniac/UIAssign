@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aligning in Grid</title>
+</head>
+<body>
+	<style>
+		#grid{
+			display: grid;
+			grid-template-rows: 100vh;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 10px;
+			align-items: center;	/*ALigning is Done here*/
+			background-color: beige;
+		}
+		#grid div{
+			padding: 20px;
+			font-size: 4vw;
+			color: white;
+		}
+		.red{
+			background: orangered;
+			height: 40%;
+			/*align-self: baseline;*/
+			/*align-self: flex-end;*/
+		}
+		.green{
+			background: yellowgreen;
+			height: 60%;
+		}
+		.blue{
+			background: blue ;
+			height: auto;
+		}
+	</style>
+
+</body>
+<div id="grid">
+	<div class="red">Red</div>
+	<div class="green">Green</div>
+	<div class="blue">Blue</div>
+</div>
+</html>

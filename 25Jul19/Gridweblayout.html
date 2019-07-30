@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebLayout</title>
+	<style>
+		body{
+			display: grid;
+			grid-template-areas: 
+			"header header header"
+			"nav article ads"
+			"footer footer footer";
+			grid-template-rows: 60px 1fr 60px;	/*header takes 60px,mid space free space mid and footer 60px end*/
+			grid-template-columns: 20% 1fr 15%;	/*nav takes 20% template takes free space and ads take 20%*/
+			grid-gap: 10px;
+			height: 100vh;
+			margin: 0;
+		}
+		header,footer,article,nav,div{
+			padding: 20px;
+			background: gold;
+		}
+		#pageheader{
+			grid-area: header;
+		}
+		#pagefooter{
+			grid-area: footer;
+		}
+		#mainArticle{
+			grid-area: article;
+		}
+		#mainNav{
+			grid-area: nav;
+		}
+		#siteAds{
+			grid-area: ads;
+		}
+	</style>
+</head>
+<body>
+	<header id="pageheader">Header</header>
+	<article id="mainArticle">Article</article>
+	<nav id="mainNav">Nav</nav>
+	<div id="siteAds">Ads</div>
+	<footer id="pagefooter">Footer</footer>
+</body>
+</html>

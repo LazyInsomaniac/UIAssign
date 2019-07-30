@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute-Selector</title>
+	<style>
+		[title="heading"]{
+			color: blue;
+		}
+		abbr[title]{
+			color: red;
+		 }
+		 input[type="text"]{
+		 	border: 1px solid red;
+		 }
+		 input[type="submit"]{
+		 	border: 1px solid green;
+		 }
+		 [class="warning"]{
+		 	color: #ffff;
+		 	background: red;
+		 }
+		 p[lang|=en]{
+		 	color: #fff;
+		 	background: blue;
+		 }
+		 a[href^="https://"]{
+		 	background: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Ftinypng.com%2Fimages%2Fsocial%2Fwebsite.jpg&imgrefurl=https%3A%2F%2Ftinypng.com%2F&docid=CktKca5gFHj7IM&tbnid=ShQnriFk8AK93M%3A&vet=10ahUKEwjZt42759HjAhXNR30KHRucC0wQMwi-ASgyMDI..i&w=1020&h=510&bih=578&biw=1280&q=image&ved=0ahUKEwjZt42759HjAhXNR30KHRucC0wQMwi-ASgyMDI&iact=mrc&uact=8");
+
+		 	/*background-color: pink;*/
+		 	padding: 15px;
+		 }
+		 a[href$=".pdf"]{
+		 	background: url("/examples/images/pdf.png") 0 50% no-repeat;
+		 	padding-left: 20px;
+		 }
+		 a[href$=".jpg"]{
+		 	background: url("/examples/images/pdf.png") 0 50% no-repeat;
+		 	padding-left: 20px;
+		 }
+		 [class*="warning"]{
+		 	color: #fff;
+		 	background: peru;	
+		 }
+		 
+		 </style>
+</head>
+<body>
+	<h1 title="heading">Atrribute Selector Demo.</h1>
+	<p title="paragraph">The color of this paragraph will be red.</p>
+	<p>The <abbr title="Hyper Text Markup Language ">HTML</abbr>is the published Language of world wide web</p>
+	<input type="text">
+	<input type="submit" value="Submit">
+	<p class="warning">text</p>
+	<p class="warning higlight">This style will also apply to para</p>
+	<p class="higlight">will not apply to para</p>
+	<p class="higlight warning dgfcd">not apply to para</p>
+
+	<p lang="en">apply to para</p>
+	<p lang="en-us">Apply to para</p>
+	<p lang="us">Not apply to para</p>
+	<p lang="us-en">Not apply to para</p>
+	<p><a href="https://www.google.com" target="_blank">Google</a></p>
+	<p>You can use the ^= operator to make an attribute selector matches any element whose attribute value starts with a specific value</p>
+
+</body>
+</html>

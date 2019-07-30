@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GridItemPlacement</title>
+	<style>
+		#grid{
+			display: grid;
+			grid-template-rows: [row1-start]50px[row2-start]1fr[row3-start]80px[row3-end];
+			grid-template-columns: [col1-start]120px[col2-start]1fr[col3-start]80px[col3-end];
+			grid-gap: 5px;
+			height: 90vh;
+		}
+		#item2{
+			grid-row-start: row3-start;
+			grid-column-start: col2-start;
+			grid-row-end: row3-end;
+			background-color: gold;
+			grid-column-end:col3-end;
+		}
+	</style>
+</head>
+<body>
+	<div id="grid">
+		<div id="item2">1</div>
+	</div>
+</body>
+</html>

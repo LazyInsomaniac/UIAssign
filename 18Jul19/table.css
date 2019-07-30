@@ -1,0 +1,49 @@
+ th, td {
+  border: solid black;
+  text-align: center;
+
+  border:0.5px solid #d1a841;
+  background-color: black;
+	color: white;
+}
+body{background-color: black;
+	text-align: center;}
+table{
+
+  width: 50%;
+}
+.div1{	
+		font-size: 25px;
+		height: 70px;
+		color: #d1a841;
+		background-color: white;
+} s
+
+.footer{
+	position: fixed;
+	background-color: red;
+	color: white;
+	text-align: center;
+}
+.container{
+	margin:0 auto;
+	width: 80%;
+
+}
+.fixed-footer{
+	bottom: 0;
+	text-align: center;
+	width:100%;
+	position: fixed;
+	background: black;
+	padding: 10px 0;
+	color: white;
+
+}
+nav a{
+	color:white;
+	text-decoration: none;
+	padding: 7px 25px;
+	display: inline-block;
+}
+

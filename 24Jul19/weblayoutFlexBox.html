@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebLayout</title>
+	<style>
+		*{
+			box-sizing: content-box;
+		}
+		header,footer{
+			background-color: yellowgreen;
+			min-height: 20vh;
+		}
+		#main{
+			display: flex;
+			min-height: calc(100vh - 40vh);
+		}
+		header,footer,nav,aside,article{
+			padding: 1em;
+		}
+		#main nav,#main aside{
+			flex: 0 0 20vw;
+			background-color: bisque;
+		}
+		#main >nav{
+			order: -1;
+		}
+		#main article{
+			flex:1;
+		}
+	</style>
+
+</head>
+<body>
+	<header>Header</header>
+	<div id="main">
+		<article>Article</article>
+		<nav>Nav</nav>
+		<aside>Aside</aside>
+		</div>
+		<footer>Footers</footer>
+
+</body>
+</html>
