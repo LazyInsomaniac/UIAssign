@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition</title>
+</head>
+<style>
+	div.container div.sample img
+	{
+		width: 20px;
+		height: 20px;
+		color: #ffff;
+		padding: 10px;
+		border-radius: 5px;
+		margin-left: 200px;
+		transition: 3s linear;
+		/*-webkit-transition:3s linear;
+		-moz-transition:3s linear;
+		-o-transition:3s linear;
+		-ms-transition:3s linear;*/
+	}
+	div.container:hover div.sample img
+	{
+		width: 240px;
+		height: 220px;
+		transform: rotate(720deg);
+		/*-webkit-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		-ms-transform:rotate(360deg);*/
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="sample">
+			<img src="husky.jpg" width="20" height="20"/>
+		</div>
+	</div>
+</body>
+</html>
