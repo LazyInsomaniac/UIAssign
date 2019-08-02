@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Simple JSON Demo</title> 
+        <meta>
+    </head>
+    <body>
+        <script>
+            var employees={"name":"Sonoo","email":"Sonoo Jaiswal@gmai.com"};
+            var output="<h2>Name:"+employees.name+"</h2>"+"<h3>Email:"+employees.email+"</h3>"
+            // OR
+            // EcmaScript Syntax
+            var result = `  
+                        <div>${employees.name}</div>
+                         <h2>Email:${employees.email}</h2>`//tild symbol above tab key
+                         document.write(result)
+                document.write(output);
+        </script>
+    </body>
+</html>

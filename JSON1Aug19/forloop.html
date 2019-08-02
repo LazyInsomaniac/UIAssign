@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Simple JSON Demo</title> 
+        <meta>
+    </head>
+    <body>
+        <script>
+            var employees=[
+                {"name":"Chamaran","email":"sassylostchild@gmail.com","Age":100,"Location":"New Delhi :)"},
+                {"name":"Sam","email":"sam@gmail.com","Age":30,"Location":"Delhi"},
+                {"name":"Bablu","email":"blahblahbablu@gmail.com","Age":40,"Location":"Delhi"},
+                {"name":"Saloni","email":"BlahBlah@gmail.com","Age":50,"Location":"UP(*_*)"},
+            ];
+            var i=0;
+            for(i=0;i<4;i++){
+           var result=`  
+                        <h1>${employees[i].name}</h1>
+                        <p> ${employees[i].email}</p>
+                        <p> ${employees[i].Age}</p>
+                        <p> ${employees[i].Location}</p>
+                         `
+                         document.write(result)
+            }
+        </script>
+    </body>
+</html>

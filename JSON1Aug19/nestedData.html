@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Simple JSON Demo</title> 
+        <meta>
+    </head>
+    
+        <script>
+            function displayArtists(){
+                var data={
+                    "artists": [
+                        {
+                        "artistname":"Deep Purple",
+                        "formed":"1972",
+                        "albums":[
+                    
+                    {
+                        "albumname":"Machine Head",
+                        "year":"1972",
+                        "genre":"Rock"
+                    },
+                    {
+                        "albumname":"Stormbringer",
+                        "year":"1974",
+                        "genre":"Rock"
+                    }]
+                },
+                {
+                    "artistname":"Joe Satriani",
+                        "born":"1972",
+                        "albums":[
+                            {
+                                "albumname":"Flying in a Blue dream",
+                                "year":"1989",
+                                "genre":"Instrumental Rock"
+                            },
+                            {
+                                "albumname":"The Exrimist",
+                                "year":"1992",
+                                "genre":"Instrumental rock"
+                            }
+                        ]
+                      },
+                      {
+                    "artistname":"Snopp Dog",
+                        "born":"1971",
+                        "albums":[
+                            {
+                                "albumname":"The DoggFather",
+                                "year":"1996",
+                                "genre":"Gansta Rap"
+                            },
+                            {
+                                "albumname":"Snoopified",
+                                "year":"2005",
+                                "genre":"Gangsta Rap"
+                            }
+                        ]
+                      }
+                    ]
+                }
+            
+            var output="<h1>Artists</h1>"; //Putting Data in a varaible and formatting with HTML tags
+            //Loop Through Artists
+            for(var i in data.artists){
+                output+="<h2>"+ data.artists[i].artistname+"</h2>"
+                output+="<ul>";
+                //Loop Through the albums for the current artist
+                for(var j in data.artists[i].albums){
+                   output+="<li>"+data.artists[i].albums[j].albumname;
+                }
+                output+="</ul>";
+            }
+            //Output the data to the artistlist element
+            document.getElementById("artistlist").innerHTML=output;
+            }
+        </script>
+        <body onload="displayArtists()">
+            <p id="artistlist"></p>
+    </body>
+</html>
